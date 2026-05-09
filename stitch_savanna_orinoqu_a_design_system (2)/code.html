@@ -1,0 +1,366 @@
+<!DOCTYPE html><html lang="es"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Lodge - Savanna Orinoquía</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;500&amp;family=EB+Garamond:wght@400&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "secondary-fixed": "#d0e9cb",
+                    "inverse-on-surface": "#f2f1ec",
+                    "outline": "#7e7665",
+                    "surface-dim": "#dbdad5",
+                    "on-error-container": "#93000a",
+                    "on-surface-variant": "#4d4637",
+                    "secondary": "#4e644c",
+                    "primary-fixed": "#ffe08f",
+                    "on-primary": "#ffffff",
+                    "background": "#fbf9f4",
+                    "tertiary-container": "#adabab",
+                    "on-secondary-fixed-variant": "#374c36",
+                    "surface-container-high": "#eae8e3",
+                    "outline-variant": "#d0c5b2",
+                    "on-primary-fixed-variant": "#584400",
+                    "on-surface": "#1b1c19",
+                    "surface-container-highest": "#e4e2dd",
+                    "on-secondary": "#ffffff",
+                    "surface-container": "#f0eee9",
+                    "secondary-container": "#cee7c8",
+                    "tertiary-fixed-dim": "#c9c6c5",
+                    "tertiary": "#5f5e5e",
+                    "surface-container-lowest": "#ffffff",
+                    "error-container": "#ffdad6",
+                    "on-tertiary": "#ffffff",
+                    "inverse-primary": "#e6c364",
+                    "on-tertiary-container": "#403f3f",
+                    "on-secondary-container": "#526850",
+                    "on-tertiary-fixed": "#1c1b1b",
+                    "primary": "#755b00",
+                    "on-primary-fixed": "#241a00",
+                    "inverse-surface": "#30312e",
+                    "surface-bright": "#fbf9f4",
+                    "primary-fixed-dim": "#e6c364",
+                    "on-primary-container": "#503d00",
+                    "surface-variant": "#e4e2dd",
+                    "on-error": "#ffffff",
+                    "primary-container": "#c9a84c",
+                    "surface": "#fbf9f4",
+                    "tertiary-fixed": "#e5e2e1",
+                    "secondary-fixed-dim": "#b5cdb0",
+                    "on-background": "#1b1c19",
+                    "on-tertiary-fixed-variant": "#474646",
+                    "error": "#ba1a1a",
+                    "surface-container-low": "#f5f3ee",
+                    "on-secondary-fixed": "#0c200d",
+                    "surface-tint": "#755b00"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "section-gap": "8rem",
+                    "gutter": "1.5rem",
+                    "container-max": "1280px",
+                    "margin-desktop": "4rem",
+                    "margin-mobile": "1.5rem"
+            },
+            "fontFamily": {
+                    "body-md": [
+                            "Outfit"
+                    ],
+                    "body-lg": [
+                            "Outfit"
+                    ],
+                    "headline-lg": [
+                            "EB Garamond"
+                    ],
+                    "label-md": [
+                            "Outfit"
+                    ],
+                    "headline-lg-mobile": [
+                            "EB Garamond"
+                    ],
+                    "headline-display": [
+                            "EB Garamond"
+                    ],
+                    "headline-md": [
+                            "EB Garamond"
+                    ]
+            },
+            "fontSize": {
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "300"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "letterSpacing": "0.01em",
+                                    "fontWeight": "300"
+                            }
+                    ],
+                    "headline-lg": [
+                            "48px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "label-md": [
+                            "14px",
+                            {
+                                    "lineHeight": "1.0",
+                                    "letterSpacing": "0.1em",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "headline-lg-mobile": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-display": [
+                            "64px",
+                            {
+                                    "lineHeight": "1.1",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-md": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.3",
+                                    "fontWeight": "400"
+                            }
+                    ]
+            }
+        },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-family: 'Material Symbols Outlined';
+            font-weight: normal;
+            font-style: normal;
+            font-size: 24px;
+            line-height: 1;
+            letter-spacing: normal;
+            text-transform: none;
+            display: inline-block;
+            white-space: nowrap;
+            word-wrap: normal;
+            direction: ltr;
+            -webkit-font-feature-settings: 'liga';
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}[type='text'],input:where(:not([type])),[type='email'],[type='url'],[type='password'],[type='number'],[type='date'],[type='datetime-local'],[type='month'],[type='search'],[type='tel'],[type='time'],[type='week'],[multiple],textarea,select{-webkit-appearance:none;appearance:none;background-color:#fff;border-color:#6b7280;border-width:1px;border-radius:0px;padding-top:0.5rem;padding-right:0.75rem;padding-bottom:0.5rem;padding-left:0.75rem;font-size:1rem;line-height:1.5rem;--tw-shadow:0 0 #0000;}[type='text']:focus, input:where(:not([type])):focus, [type='email']:focus, [type='url']:focus, [type='password']:focus, [type='number']:focus, [type='date']:focus, [type='datetime-local']:focus, [type='month']:focus, [type='search']:focus, [type='tel']:focus, [type='time']:focus, [type='week']:focus, [multiple]:focus, textarea:focus, select:focus{outline:2px solid transparent;outline-offset:2px;--tw-ring-inset:var(--tw-empty,/*!*/ /*!*/);--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:#2563eb;--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);border-color:#2563eb}input::placeholder,textarea::placeholder{color:#6b7280;opacity:1}::-webkit-datetime-edit-fields-wrapper{padding:0}::-webkit-date-and-time-value{min-height:1.5em;text-align:inherit}::-webkit-datetime-edit{display:inline-flex}::-webkit-datetime-edit,::-webkit-datetime-edit-year-field,::-webkit-datetime-edit-month-field,::-webkit-datetime-edit-day-field,::-webkit-datetime-edit-hour-field,::-webkit-datetime-edit-minute-field,::-webkit-datetime-edit-second-field,::-webkit-datetime-edit-millisecond-field,::-webkit-datetime-edit-meridiem-field{padding-top:0;padding-bottom:0}select{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%236b7280' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");background-position:right 0.5rem center;background-repeat:no-repeat;background-size:1.5em 1.5em;padding-right:2.5rem;print-color-adjust:exact}[multiple],[size]:where(select:not([size="1"])){background-image:initial;background-position:initial;background-repeat:unset;background-size:initial;padding-right:0.75rem;print-color-adjust:unset}[type='checkbox'],[type='radio']{-webkit-appearance:none;appearance:none;padding:0;print-color-adjust:exact;display:inline-block;vertical-align:middle;background-origin:border-box;-webkit-user-select:none;user-select:none;flex-shrink:0;height:1rem;width:1rem;color:#2563eb;background-color:#fff;border-color:#6b7280;border-width:1px;--tw-shadow:0 0 #0000}[type='checkbox']{border-radius:0px}[type='radio']{border-radius:100%}[type='checkbox']:focus,[type='radio']:focus{outline:2px solid transparent;outline-offset:2px;--tw-ring-inset:var(--tw-empty,/*!*/ /*!*/);--tw-ring-offset-width:2px;--tw-ring-offset-color:#fff;--tw-ring-color:#2563eb;--tw-ring-offset-shadow:var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);--tw-ring-shadow:var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width)) var(--tw-ring-color);box-shadow:var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow)}[type='checkbox']:checked,[type='radio']:checked{border-color:transparent;background-color:currentColor;background-size:100% 100%;background-position:center;background-repeat:no-repeat}[type='checkbox']:checked{background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3cpath d='M12.207 4.793a1 1 0 010 1.414l-5 5a1 1 0 01-1.414 0l-2-2a1 1 0 011.414-1.414L6.5 9.086l4.293-4.293a1 1 0 011.414 0z'/%3e%3c/svg%3e");}@media (forced-colors: active) {[type='checkbox']:checked{-webkit-appearance:auto;appearance:auto}}[type='radio']:checked{background-image:url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='white' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e");}@media (forced-colors: active) {[type='radio']:checked{-webkit-appearance:auto;appearance:auto}}[type='checkbox']:checked:hover,[type='checkbox']:checked:focus,[type='radio']:checked:hover,[type='radio']:checked:focus{border-color:transparent;background-color:currentColor}[type='checkbox']:indeterminate{background-image:url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 16 16'%3e%3cpath stroke='white' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M4 8h8'/%3e%3c/svg%3e");border-color:transparent;background-color:currentColor;background-size:100% 100%;background-position:center;background-repeat:no-repeat;}@media (forced-colors: active) {[type='checkbox']:indeterminate{-webkit-appearance:auto;appearance:auto}}[type='checkbox']:indeterminate:hover,[type='checkbox']:indeterminate:focus{border-color:transparent;background-color:currentColor}[type='file']{background:unset;border-color:inherit;border-width:0;border-radius:0;padding:0;font-size:unset;line-height:inherit}[type='file']:focus{outline:1px solid ButtonText;outline:1px auto -webkit-focus-ring-color}.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border-width:0}.fixed{position:fixed}.absolute{position:absolute}.relative{position:relative}.inset-0{inset:0px}.bottom-8{bottom:2rem}.left-0{left:0px}.right-8{right:2rem}.top-0{top:0px}.z-0{z-index:0}.z-10{z-index:10}.z-50{z-index:50}.order-1{order:1}.order-2{order:2}.mx-auto{margin-left:auto;margin-right:auto}.mb-12{margin-bottom:3rem}.mb-16{margin-bottom:4rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.grid{display:grid}.hidden{display:none}.h-16{height:4rem}.h-64{height:16rem}.h-80{height:20rem}.h-96{height:24rem}.h-\[716px\]{height:716px}.h-full{height:100%}.w-16{width:4rem}.w-full{width:100%}.max-w-2xl{max-width:42rem}.max-w-3xl{max-width:48rem}.max-w-container-max{max-width:1280px}.flex-grow{flex-grow:1}.scale-95{--tw-scale-x:.95;--tw-scale-y:.95;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}@keyframes bounce{0%, 100%{transform:translateY(-25%);animation-timing-function:cubic-bezier(0.8,0,1,1)}50%{transform:none;animation-timing-function:cubic-bezier(0,0,0.2,1)}}.animate-bounce{animation:bounce 1s infinite}.cursor-pointer{cursor:pointer}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-end{justify-content:flex-end}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-4{gap:1rem}.gap-8{gap:2rem}.gap-gutter{gap:1.5rem}.space-x-2 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.5rem * var(--tw-space-x-reverse));margin-left:calc(0.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-4 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1rem * var(--tw-space-x-reverse));margin-left:calc(1rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-8 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(2rem * var(--tw-space-x-reverse));margin-left:calc(2rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-24 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(6rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(6rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-x-hidden{overflow-x:hidden}.rounded{border-radius:0.125rem}.rounded-full{border-radius:0.75rem}.border{border-width:1px}.border-b-2{border-bottom-width:2px}.border-on-primary{--tw-border-opacity:1;border-color:rgb(255 255 255 / var(--tw-border-opacity, 1))}.border-primary{--tw-border-opacity:1;border-color:rgb(117 91 0 / var(--tw-border-opacity, 1))}.bg-background{--tw-bg-opacity:1;background-color:rgb(251 249 244 / var(--tw-bg-opacity, 1))}.bg-black\/30{background-color:rgb(0 0 0 / 0.3)}.bg-inverse-surface{--tw-bg-opacity:1;background-color:rgb(48 49 46 / var(--tw-bg-opacity, 1))}.bg-primary-container{--tw-bg-opacity:1;background-color:rgb(201 168 76 / var(--tw-bg-opacity, 1))}.bg-secondary{--tw-bg-opacity:1;background-color:rgb(78 100 76 / var(--tw-bg-opacity, 1))}.bg-secondary-container{--tw-bg-opacity:1;background-color:rgb(206 231 200 / var(--tw-bg-opacity, 1))}.bg-surface{--tw-bg-opacity:1;background-color:rgb(251 249 244 / var(--tw-bg-opacity, 1))}.bg-surface-container-low{--tw-bg-opacity:1;background-color:rgb(245 243 238 / var(--tw-bg-opacity, 1))}.bg-surface\/30{background-color:rgb(251 249 244 / 0.3)}.bg-transparent{background-color:transparent}.object-cover{object-fit:cover}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.px-margin-desktop{padding-left:4rem;padding-right:4rem}.px-margin-mobile{padding-left:1.5rem;padding-right:1.5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.py-6{padding-top:1.5rem;padding-bottom:1.5rem}.py-section-gap{padding-top:8rem;padding-bottom:8rem}.pb-1{padding-bottom:0.25rem}.pl-0{padding-left:0px}.pr-0{padding-right:0px}.text-center{text-align:center}.font-body-lg{font-family:Outfit}.font-body-md{font-family:Outfit}.font-headline-display{font-family:EB Garamond}.font-headline-lg{font-family:EB Garamond}.font-headline-md{font-family:EB Garamond}.font-label-md{font-family:Outfit}.text-body-lg{font-size:18px;line-height:1.6;letter-spacing:0.01em;font-weight:300}.text-body-md{font-size:16px;line-height:1.6;font-weight:300}.text-headline-display{font-size:64px;line-height:1.1;letter-spacing:-0.02em;font-weight:400}.text-headline-lg{font-size:48px;line-height:1.2;font-weight:400}.text-headline-md{font-size:32px;line-height:1.3;font-weight:400}.text-label-md{font-size:14px;line-height:1.0;letter-spacing:0.1em;font-weight:500}.uppercase{text-transform:uppercase}.tracking-tight{letter-spacing:-0.025em}.tracking-widest{letter-spacing:0.1em}.text-on-background{--tw-text-opacity:1;color:rgb(27 28 25 / var(--tw-text-opacity, 1))}.text-on-primary{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-on-primary-fixed{--tw-text-opacity:1;color:rgb(36 26 0 / var(--tw-text-opacity, 1))}.text-on-secondary{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-on-surface{--tw-text-opacity:1;color:rgb(27 28 25 / var(--tw-text-opacity, 1))}.text-on-surface-variant{--tw-text-opacity:1;color:rgb(77 70 55 / var(--tw-text-opacity, 1))}.text-outline{--tw-text-opacity:1;color:rgb(126 118 101 / var(--tw-text-opacity, 1))}.text-primary{--tw-text-opacity:1;color:rgb(117 91 0 / var(--tw-text-opacity, 1))}.text-primary-container{--tw-text-opacity:1;color:rgb(201 168 76 / var(--tw-text-opacity, 1))}.text-primary-fixed{--tw-text-opacity:1;color:rgb(255 224 143 / var(--tw-text-opacity, 1))}.text-surface-variant{--tw-text-opacity:1;color:rgb(228 226 221 / var(--tw-text-opacity, 1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.shadow-md{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-opacity{transition-property:opacity;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-transform{transition-property:transform;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.duration-500{transition-duration:500ms}.ease-in-out{transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1)}.hover\:scale-110:hover{--tw-scale-x:1.1;--tw-scale-y:1.1;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.hover\:bg-inverse-primary:hover{--tw-bg-opacity:1;background-color:rgb(230 195 100 / var(--tw-bg-opacity, 1))}.hover\:bg-on-primary:hover{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.hover\:text-inverse-surface:hover{--tw-text-opacity:1;color:rgb(48 49 46 / var(--tw-text-opacity, 1))}.hover\:text-primary:hover{--tw-text-opacity:1;color:rgb(117 91 0 / var(--tw-text-opacity, 1))}.hover\:text-primary-fixed:hover{--tw-text-opacity:1;color:rgb(255 224 143 / var(--tw-text-opacity, 1))}.hover\:opacity-80:hover{opacity:0.8}.hover\:shadow-lg:hover{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.active\:scale-90:active{--tw-scale-x:.9;--tw-scale-y:.9;transform:translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))}.dark\:bg-black:is(.dark *){--tw-bg-opacity:1;background-color:rgb(0 0 0 / var(--tw-bg-opacity, 1))}@media (min-width: 640px){.sm\:flex-row{flex-direction:row}}@media (min-width: 768px){.md\:order-1{order:1}.md\:order-2{order:2}.md\:flex{display:flex}.md\:h-\[500px\]{height:500px}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:px-margin-desktop{padding-left:4rem;padding-right:4rem}.md\:pl-12{padding-left:3rem}.md\:pr-12{padding-right:3rem}}</style></head>
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden" data-mode="connect">
+<!-- TopNavBar -->
+<nav class="fixed top-0 left-0 w-full z-50 bg-surface/30 backdrop-blur-md transition-all duration-500 ease-in-out">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6 w-full max-w-container-max mx-auto">
+<a class="font-headline-md text-headline-md text-on-surface tracking-tight" href="#">SAVANNA ORINOQUÍA</a>
+<div class="hidden md:flex space-x-8">
+<a class="text-on-surface hover:text-primary transition-colors font-label-md text-label-md tracking-widest uppercase" href="#"><br></a>
+<a class="text-on-surface hover:text-primary transition-colors font-label-md text-label-md tracking-widest uppercase" href="#">Reservas</a>
+<a class="text-on-surface hover:text-primary transition-colors font-label-md text-label-md tracking-widest uppercase" href="#">Orinoquía</a>
+<a class="text-on-surface hover:text-primary transition-colors font-label-md text-label-md tracking-widest uppercase" href="#">Experiencias</a>
+<a class="text-primary border-b-2 border-primary pb-1 font-label-md text-label-md tracking-widest uppercase" href="#">Lodge</a>
+<a class="text-on-surface hover:text-primary transition-colors font-label-md text-label-md tracking-widest uppercase" href="#">Sostenibilidad</a>
+</div>
+<div class="flex items-center space-x-4">
+<span class="font-label-md text-label-md tracking-widest uppercase text-on-surface hover:opacity-80 transition-opacity cursor-pointer">ES/EN</span>
+<span class="material-symbols-outlined text-on-surface hover:opacity-80 transition-opacity cursor-pointer scale-95 active:scale-90" data-icon="camera">camera</span>
+<span class="material-symbols-outlined text-on-surface hover:opacity-80 transition-opacity cursor-pointer scale-95 active:scale-90" data-icon="public">public</span>
+</div>
+</div>
+</nav>
+<!-- Hero Section -->
+<header class="relative w-full h-[716px] flex items-center justify-center">
+<div class="absolute inset-0 z-0">
+<img alt="Hero Background" class="w-full h-full object-cover" data-alt="A sweeping, high-end architectural photograph of an exclusive eco-lodge nestled in a lush, untamed natural setting, taken at dusk. The scene is illuminated by warm, inviting interior lights glowing from the wooden structures, contrasting with the deep greens of the surrounding jungle and the fading blue of the evening sky. A subtle dark scrim overlay enhances the dramatic, luxurious mood, ensuring bright white serif typography placed over it remains highly legible. The aesthetic is minimal, expensive, and deeply connected to nature, reflecting a pristine light-mode base with striking high-contrast elements." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC-LwcVa8_e7i9FFYesVi8AfO0bwxeeyIFgMDczvnKiLj1fkw-9eMtVuQS3FGWj3ifoshKP37omzPsoHWLL6lwVRKa87km9pCDGFs5gwTHSim0w2ohz1frcfkKwWjPtZSr7Zo5aA3MRvz36Y_J1hAw5-HZ4RA30hyut72zAg9eMP_d6CrsM_5GTb50P-HDg1YNpyytceRX97xU86b3zvdIkL4YaSwZhml6f1OyoKfd7Y9yiv0DBAZkk93pvm0-V2ZbjnAXXczS-jrtt">
+<div class="absolute inset-0 bg-black/30"></div>
+</div>
+<div class="relative z-10 text-center px-margin-mobile">
+<h1 class="font-headline-display text-headline-display text-on-primary mb-4">El Lodge</h1>
+<p class="font-body-lg text-body-lg text-on-primary max-w-2xl mx-auto">Estilo &amp; Confort en los Llanos Orientales</p>
+</div>
+</header>
+<!-- General Description Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-low max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div class="pr-0 md:pr-12">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6">Savanna Orinoquía Lodge es un refugio exclusivo rodeado de una naturaleza perfecta, mágica y despreocupada...</h2>
+</div>
+<div class="relative h-96 w-full rounded overflow-hidden">
+<img alt="Lodge Exterior" class="absolute inset-0 w-full h-full object-cover" data-alt="A sophisticated, high-contrast exterior shot of a luxury boutique lodge during the golden hour. The architecture features clean lines, natural wood finishes, and expansive glass windows that reflect the surrounding wild landscape of the eastern plains. The lighting is warm and radiant, highlighting gold accents against deep architectural blacks and warm cream surfaces. The composition is asymmetrical, emphasizing the vastness of the natural environment while maintaining a quiet, expensive, and grounded minimalist aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC6Nue7_Mtn95R6T4747vLUJKTxaZ-XDiTSFzIjtngDfhO7XcJQQYHMIW_XNmOlT5n-xC3oz7DpeQhOWGTt1Rf2tqx7D7cSkKA7-tJdzBJKeMqWKA9QTw_vKHoZPsP0NtjaGwU54PwlDN4XzU3NNkqTGKTkIR8kLzgc8YhcIvlp-zDsQAHpaavssdeddyTihXILC-5Q-UK5MxAhtE8VZzxU8-OrAnUYU7lA6PfO-1NGE-KEJMdQo_pGkWbvRelccJqee6SYjY4nxkmA">
+</div>
+</div>
+</section>
+<!-- Bungalows Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-4">Nuestros bungalows</h2>
+<p class="font-body-md text-body-md text-on-surface-variant uppercase tracking-widest">Seis alojamientos únicos · Capacidad hasta 5 personas cada uno</p>
+</div>
+<div class="space-y-24">
+<!-- Bungalow 1 -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div class="order-2 md:order-1 relative h-80 md:h-[500px] rounded overflow-hidden">
+<img alt="Bungalow Garza Real" class="w-full h-full object-cover" data-alt="An inviting interior view of a luxury eco-bungalow bedroom, characterized by minimalist design and a warm cream palette. The room features a plush king-size bed with pristine white linens, framed by large panoramic windows offering a stunning river view. Deep architectural black framing around the windows contrasts with subtle sand gold accents in the decor. The natural light pours in, creating a serene, high-end atmosphere that perfectly blends rustic wilderness with world-class comfort." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDukojK5pIDKn9U06ywhF4SCvo9yIE-g1mBmYU5o-RyZIdgafb_8P9ZCdy_pG6DpIAEyKeqrDgldGsFY3gCwZMciBm_pI2JKlXkJakO__EXGZDL6vstu_WLUAvlvp76eTgzKdgRrIdiTM1pXr4THTQuxF2tqyjPZd55JT-AeWO80hcRBqKw-iRIpnFnVwD5BEIt2jBbKYIJ1W6nPujFy2pJev4RoLgAsoSwpOufrLwo6r6NamasXRydYXwXR02xdVn0W5-GEeusV8fC">
+</div>
+<div class="order-1 md:order-2 pl-0 md:pl-12">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Garza Real</h3>
+<p class="font-label-md text-label-md text-primary-container mb-4 uppercase tracking-widest">Vista al río · Terraza privada</p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Disfrute de la tranquilidad del río desde su terraza privada. Un espacio diseñado para la relajación profunda, integrando el lujo minimalista con el entorno salvaje.</p>
+<div class="flex space-x-4 mb-8">
+<span class="material-symbols-outlined text-outline" data-icon="king_bed">king_bed</span>
+<span class="material-symbols-outlined text-outline" data-icon="ac_unit">ac_unit</span>
+<span class="material-symbols-outlined text-outline" data-icon="wifi">wifi</span>
+</div>
+<button class="bg-primary-container text-on-primary-fixed px-6 py-3 rounded hover:bg-inverse-primary transition-colors font-label-md text-label-md uppercase tracking-widest">Reservar este bungalow →</button>
+</div>
+</div>
+<!-- Bungalow 2 -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<div class="pr-0 md:pr-12">
+<h3 class="font-headline-md text-headline-md text-on-surface mb-2">Sabana</h3>
+<p class="font-label-md text-label-md text-primary-container mb-4 uppercase tracking-widest">Vista a la llanura · Hamaca exterior</p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">Contemple la inmensidad de los llanos orientales desde la comodidad de su hamaca. Interiores espaciosos que reflejan la luz natural y la paleta cálida de la sabana.</p>
+<div class="flex space-x-4 mb-8">
+<span class="material-symbols-outlined text-outline" data-icon="deck">deck</span>
+<span class="material-symbols-outlined text-outline" data-icon="shower">shower</span>
+<span class="material-symbols-outlined text-outline" data-icon="coffee_maker">coffee_maker</span>
+</div>
+<button class="bg-primary-container text-on-primary-fixed px-6 py-3 rounded hover:bg-inverse-primary transition-colors font-label-md text-label-md uppercase tracking-widest">Reservar este bungalow →</button>
+</div>
+<div class="relative h-80 md:h-[500px] rounded overflow-hidden">
+<img alt="Bungalow Sabana" class="w-full h-full object-cover" data-alt="A serene outdoor shot of a private bungalow terrace overlooking a vast, sweeping plain. The scene is anchored by a beautifully crafted hammock swinging gently in the foreground. The lighting is soft and bright, characteristic of early morning, emphasizing a clean, light-mode aesthetic with warm cream and bone white tones. Subtle jungle green foliage frames the edges, adding a touch of untamed nature to the sophisticated, minimalist architectural elements." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCT8coO8Xw_j5iUJ7xT7RX2vqZ6anJEqejgXOQ0FgIVm3s-Qkex57aU3DPfd5QySuZLGXcF6gBHllSGKS10sjl6rmSJWYhHoNzMly7VGnqInil2x2cY17PC0dZRu27p_HH3gnNkgk6oRwYaknBy7TpvUJwTJAVNW0e1g9sW_ciiwGA0h4qPcxBdfT_qc-QuvHbDP_5NlU2BEpw8z2mrinIa184FOmf5hxy2UZ2kTeVZV_F6qxdO3XU1joR03hRnDPWOjcb32PIx7N3g">
+</div>
+</div>
+</div>
+</section>
+<!-- The Suite Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-inverse-surface text-on-primary relative">
+<div class="max-w-container-max mx-auto text-center mb-12">
+<span class="font-label-md text-label-md text-primary-container tracking-widest uppercase mb-4 inline-block">EXCLUSIVO</span>
+<h2 class="font-headline-display text-headline-display text-on-primary mb-4">La Suite</h2>
+<p class="font-body-md text-body-md text-surface-variant uppercase tracking-widest">Hasta 3 personas · El alojamiento más privado del lodge</p>
+</div>
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-3 gap-gutter mb-12">
+<div class="h-64 rounded overflow-hidden">
+<img alt="Suite Interior" class="w-full h-full object-cover" data-alt="A luxurious, high-contrast interior view of an exclusive suite bedroom. The design relies on a sophisticated palette of deep architectural blacks and radiant sand gold accents, with expansive bone-white linens on a massive bed. Subtle ambient lighting highlights elegant textures and minimal furnishings, while a dark scrim over large windows frames the mysterious depths of the nighttime jungle outside. The mood is highly premium, quiet, and intimately connected to nature." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDt8Qi8KKT5O-wCwCemgWab8qOvlK2V31rXYMgty9Pii0Poqp5Yws8UT-x2Lf9lyFIlcXNlEfJYDrW_6381SXLdHOKBPyBzOVvkN1b-SfmATRmlcXHFPk7gZSwyyCP4TY3RbB9GknThR_wNAwKtvuPzJnTeg2RCDvYpO8sZUv13vNci1PLMQjZGDnfUxzp8f7i0M79Lhh9YCdST5lYOBsrlwN7J_x0rXWMkftqm_DUOzmXcLvHMLOk_Tjac6_8bWR1jkNaq_8zyfskq">
+</div>
+<div class="h-64 rounded overflow-hidden">
+<img alt="Suite Living Area" class="w-full h-full object-cover" data-alt="A refined living area within a private luxury suite, showcasing asymmetrical furniture arrangements that mirror organic natural patterns. The space is anchored by warm cream walls and deep black wooden architectural features. A sleek, modern lounge chair sits beside a low wooden table adorned with a bottle of welcome wine and delicate glassware. The lighting is soft and moody, creating a serene, expensive atmosphere typical of world-class minimalist design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAoZTX5VQmduIwwZ-koQOZuGdfnLiE7QatStqQdNUC3i1a1jhv6VOqSQP1xD1lg4C9Mxa6T0U1vR7FHh018jasD-Y_joEubnA90yzUpxYb61rWQ5ltwABtpZvmVYSIwHv3sCj1qsiQQ9GCNirKyN3tS7FrdiD5kvCOxu4mABbeffdQeJFtcdbeg9twtu1_lRtpQnGiidKbR0Wa185Ub8Mu3J1L8g6tcZrxxE0MAR9o2GTWhSbA53jjjsJVZ6_ZqdiJKKlduxGxXU_ET">
+</div>
+<div class="h-64 rounded overflow-hidden">
+<img alt="Suite Bathroom" class="w-full h-full object-cover" data-alt="An opulent, nature-inspired bathroom within a high-end suite. The focal point is a large, freestanding stone bathtub set against a backdrop of dark, textured slate tiles and expansive glass looking out into dense jungle greenery. Sand gold fixtures gleam subtly in the low, ambient light. The aesthetic balances rugged natural elements with sleek, modern minimalism, conveying a sense of profound relaxation and world-class luxury in an untamed setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDjsy69Itgc69gjAddf_seOOV54vxtfXSYJ8DDVC4euRqJDUOY88Sm6cy1c6qafAP2Q7mhCKpLW_u8WIpQ7GBrzNo73qmXFu9YkDGWa3WzSqSnK28-0YY0oDLHnnvzzt4Ik8vnMk9MrGmmB9qwmjDw19ZzsE6IK2mQS4Xh-nBeMRrmV7-eXF4q52FbED6Aic11iR-_XgfflCNFTcH4G39C5Ajct28PzvJCQTLhrAfH9tcaI1J5bmsUgxNE6jYwvgIfois7hS9Gwwwnh">
+</div>
+</div>
+<div class="max-w-3xl mx-auto flex flex-wrap justify-center gap-8 mb-12">
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-primary-container" data-icon="vpn_key">vpn_key</span>
+<span class="font-body-md text-body-md text-surface-variant">Habitación privada</span>
+</div>
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-primary-container" data-icon="balcony">balcony</span>
+<span class="font-body-md text-body-md text-surface-variant">Terraza exclusiva</span>
+</div>
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-primary-container" data-icon="room_service">room_service</span>
+<span class="font-body-md text-body-md text-surface-variant">Servicio personalizado</span>
+</div>
+<div class="flex items-center space-x-2">
+<span class="material-symbols-outlined text-primary-container" data-icon="wine_bar">wine_bar</span>
+<span class="font-body-md text-body-md text-surface-variant">Vino de bienvenida</span>
+</div>
+</div>
+<div class="text-center">
+<button class="bg-primary-container text-on-primary-fixed px-8 py-4 rounded hover:bg-inverse-primary transition-colors font-label-md text-label-md uppercase tracking-widest">Reservar la Suite →</button>
+</div>
+</section>
+<!-- Gastronomy Section -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-low max-w-container-max mx-auto">
+<div class="text-center mb-16 max-w-3xl mx-auto">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-6">Gastronomía</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">Descubra los auténticos sabores de los Llanos y Casanare, reinterpretados con técnicas de alta cocina. Una experiencia culinaria que celebra los ingredientes locales en un entorno inigualable.</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Gastro 1 -->
+<div class="flex flex-col">
+<div class="h-64 rounded overflow-hidden mb-6">
+<img alt="Gastronomía Local" class="w-full h-full object-cover" data-alt="A high-end culinary photograph featuring a beautifully plated dish of local cuisine, set against a dark, minimalist background. The dish highlights vibrant, natural colors of fresh regional ingredients, contrasting sharply with a deep black ceramic plate. Subtle, directed lighting illuminates the textures of the food, creating a mouth-watering yet sophisticated composition. The styling reflects a luxury dining experience, rooted in earthiness but executed with world-class precision." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAI-gti6g-385oN2AUpmcxYd4CKAzVpvT87DybZsa38p3anKWAfDkbKiKugDqmw9Y2BDfjFC7F4FsGPI6i5AmM_yfTHqffV53nLi4h0-sxrbFsJKoJ76jEKFzgDAujxv2ICYEvE_5uWBpLo4Gb-o60F0feoryv_DDPJIIeREhGW2zHEhV5tgs7qs2jNta0ZELc4e5YomoD9NCDjpxDfbH4HdMEn0d5043ADDP1i2-jBtIwZze0dCNsqpFTwTnF2gpc2u7Uv1GGkN70m">
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Gastronomía Local</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">Platos tradicionales llaneros elevados a la categoría de alta cocina, utilizando ingredientes frescos de la región.</p>
+</div>
+<!-- Gastro 2 -->
+<div class="flex flex-col">
+<div class="h-64 rounded overflow-hidden mb-6">
+<img alt="Gastronomía Vegetariana" class="w-full h-full object-cover" data-alt="An elegant, minimalist shot of a vibrant vegetarian dish presented on a pristine bone-white plate. The composition is asymmetrical, drawing focus to the bright greens and earthy tones of the vegetables against a warm cream background. Soft, natural lighting enhances the freshness of the ingredients, conveying a sense of healthy, refined dining. The aesthetic is clean, light, and perfectly aligns with a sophisticated eco-lodge culinary experience." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY--yasrMem6D9WFMny9W-cp8nLDZLuUu4Efy7S80nEtTJTilYD_Lg91yO-IDDNVXvqfUflEZdufMYahQDaAM9sXtOLPHKB8OiJvb5OcYYzNez0ppiRBHlvckqJnl4dvjZu2OA6j7mSYx0woiho_5bQx1wnHxy0aXyyGrdWBFprtwrWiCzBZOGXG7mX1RZkQD2jISBGmS96QS_iqJotfRp0Mojb2w0-reQ0zZuNz7f6kGb7CuZwSTl2G0DVo0LRIWgBHlH3ptWzEr7">
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Gastronomía Vegetariana</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">Opciones creativas y nutritivas basadas en plantas, diseñadas para sorprender a los paladares más exigentes.</p>
+</div>
+<!-- Gastro 3 -->
+<div class="flex flex-col">
+<div class="h-64 rounded overflow-hidden mb-6">
+<img alt="Gastronomía Saludable" class="w-full h-full object-cover" data-alt="A sophisticated presentation of a healthy, light meal, featuring a delicate balance of textures and colors on rustic yet refined tableware. The setting includes subtle hints of jungle green foliage in the softly blurred background, anchoring the dish in its natural surroundings. The lighting is bright and high-key, highlighting the freshness of the ingredients. The overall mood is serene, nourishing, and aligned with a premium, minimalist wellness retreat." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD-kPRYDTXvbatjRTS1ohyux6rM0IyEBrJKL6v3KWi6hAic5F8R1Q3rQ0pnNoVvG0E9_Ns5b_aNak7qbuqsc-om8jbfkDxyKukOJE91U1FkfxRn5tAEHplM2HDwj1thIJ7lvia2bPTm9P02940UycjWAc9a1G_v14GZjWm9XvR97IY00q5zzMXg5yw_0ddePvisQgEuKVwoI8c5d8k_JggrzarIxTSNH0AzhtKqBoKf8sso1ckCFcjojH8fzGEcrK4ZPce0MMpD3hyX">
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-3">Gastronomía Saludable</h3>
+<p class="font-body-md text-body-md text-on-surface-variant flex-grow">Menús equilibrados pensados para el bienestar, utilizando productos orgánicos y de temporada.</p>
+</div>
+</div>
+</section>
+<!-- Final CTA -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-inverse-surface text-center">
+<h2 class="font-headline-display text-headline-display text-on-primary mb-8">¿Listo para vivir la experiencia?</h2>
+<div class="flex flex-col sm:flex-row justify-center gap-4">
+<button class="bg-primary-container text-on-primary-fixed px-8 py-4 rounded hover:bg-inverse-primary transition-colors font-label-md text-label-md uppercase tracking-widest">Reservar ahora →</button>
+<button class="bg-transparent border border-on-primary text-on-primary px-8 py-4 rounded hover:bg-on-primary hover:text-inverse-surface transition-colors font-label-md text-label-md uppercase tracking-widest">Ver disponibilidad</button>
+</div>
+</section>
+<!-- Footer -->
+<footer class="w-full py-section-gap px-margin-desktop bg-inverse-surface dark:bg-black">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter max-w-container-max mx-auto">
+<div>
+<a class="font-headline-lg text-headline-lg text-primary-fixed block mb-6" href="#">SAVANNA ORINOQUÍA</a>
+<p class="font-body-md text-body-md text-surface-variant">© 2024 Savanna Orinoquía Lodge. All rights reserved.</p>
+</div>
+<div class="flex flex-col space-y-4">
+<a class="font-body-md text-body-md text-surface-variant hover:text-primary-fixed transition-colors" href="#">Biodiversidad</a>
+<a class="font-body-md text-body-md text-surface-variant hover:text-primary-fixed transition-colors" href="#">Cómo llegar</a>
+<a class="font-body-md text-body-md text-surface-variant hover:text-primary-fixed transition-colors" href="#">Sostenibilidad</a>
+<a class="font-body-md text-body-md text-surface-variant hover:text-primary-fixed transition-colors" href="#">Términos y Condiciones</a>
+</div>
+<div class="flex justify-end items-start">
+<!-- Social links could go here -->
+</div>
+</div>
+</footer>
+<!-- BottomNavBar (WhatsApp FAB) -->
+<div class="fixed bottom-8 right-8 z-50 flex items-center justify-center">
+<button class="bg-secondary text-on-secondary rounded-full flex items-center justify-center h-16 w-16 shadow-md hover:shadow-lg hover:scale-110 transition-transform bg-secondary-container animate-bounce">
+<span class="material-symbols-outlined" data-icon="chat">chat</span>
+<span class="sr-only">WhatsApp</span>
+</button>
+</div>
+</body></html>

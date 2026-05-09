@@ -1,0 +1,456 @@
+﻿<!DOCTYPE html>
+
+<html class="light" lang="es"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sostenibilidad - Savanna Orinoquía Lodge</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Google Fonts: EB Garamond (Serif) & Outfit (Sans-serif) based on config -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&amp;family=Outfit:wght@100..900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config from Guidelines -->
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary-fixed-variant": "#474646",
+                      "surface-tint": "#755b00",
+                      "on-surface-variant": "#4d4637",
+                      "surface-container-highest": "#e4e2dd",
+                      "primary": "#755b00",
+                      "on-error-container": "#93000a",
+                      "surface": "#fbf9f4",
+                      "outline": "#7e7665",
+                      "surface-bright": "#fbf9f4",
+                      "surface-container-lowest": "#ffffff",
+                      "secondary": "#4e644c",
+                      "tertiary-fixed-dim": "#c9c6c5",
+                      "inverse-primary": "#e6c364",
+                      "error": "#ba1a1a",
+                      "on-secondary-fixed": "#0c200d",
+                      "on-primary-container": "#503d00",
+                      "inverse-surface": "#30312e",
+                      "secondary-fixed-dim": "#b5cdb0",
+                      "tertiary-container": "#adabab",
+                      "on-primary-fixed-variant": "#584400",
+                      "on-secondary": "#ffffff",
+                      "on-secondary-container": "#526850",
+                      "surface-dim": "#dbdad5",
+                      "on-secondary-fixed-variant": "#374c36",
+                      "surface-container-low": "#f5f3ee",
+                      "secondary-container": "#cee7c8",
+                      "on-tertiary": "#ffffff",
+                      "on-surface": "#1b1c19",
+                      "on-tertiary-container": "#403f3f",
+                      "tertiary": "#5f5e5e",
+                      "surface-variant": "#e4e2dd",
+                      "on-background": "#1b1c19",
+                      "on-primary-fixed": "#241a00",
+                      "on-error": "#ffffff",
+                      "background": "#fbf9f4",
+                      "on-tertiary-fixed": "#1c1b1b",
+                      "surface-container": "#f0eee9",
+                      "secondary-fixed": "#d0e9cb",
+                      "outline-variant": "#d0c5b2",
+                      "primary-fixed-dim": "#e6c364",
+                      "on-primary": "#ffffff",
+                      "error-container": "#ffdad6",
+                      "primary-fixed": "#ffe08f",
+                      "inverse-on-surface": "#f2f1ec",
+                      "primary-container": "#c9a84c",
+                      "tertiary-fixed": "#e5e2e1",
+                      "surface-container-high": "#eae8e3"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "section-gap": "8rem",
+                      "margin-mobile": "1.5rem",
+                      "container-max": "1280px",
+                      "margin-desktop": "4rem",
+                      "gutter": "1.5rem"
+              },
+              "fontFamily": {
+                      "body-lg": [
+                              "Outfit"
+                      ],
+                      "label-md": [
+                              "Outfit"
+                      ],
+                      "headline-lg": [
+                              "EB Garamond"
+                      ],
+                      "headline-lg-mobile": [
+                              "EB Garamond"
+                      ],
+                      "headline-display": [
+                              "EB Garamond"
+                      ],
+                      "body-md": [
+                              "Outfit"
+                      ],
+                      "headline-md": [
+                              "EB Garamond"
+                      ]
+              },
+              "fontSize": {
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "letterSpacing": "0.01em",
+                                      "fontWeight": "300"
+                              }
+                      ],
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "letterSpacing": "0.1em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-lg": [
+                              "48px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-lg-mobile": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-display": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "300"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "400"
+                              }
+                      ]
+              }
+            },
+          }
+        }
+      </script>
+<style>
+        /* Base styles */
+        body {
+            background-color: #fbf9f4; /* surface */
+            color: #1b1c19; /* on-surface */
+            overflow-x: hidden;
+        }
+        
+        /* Material symbols setup */
+        .material-symbols-outlined {
+          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+
+        /* Glassmorphism nav specific override */
+        .scrolled-nav {
+            background-color: #0d0d0d !important;
+            backdrop-filter: none !important;
+        }
+      </style>
+</head>
+<body class="antialiased font-body-md text-body-md bg-surface text-on-surface">
+<!-- TopNavBar Component -->
+<header class="fixed top-0 left-0 w-full z-50 transition-all duration-500 ease-in-out bg-surface/30 backdrop-blur-md dark:bg-black/30">
+<div class="flex justify-between items-center px-margin-mobile md:px-margin-desktop py-6 w-full max-w-container-max mx-auto">
+<!-- Brand Logo -->
+<a class="font-headline-md text-headline-md text-on-surface dark:text-primary-fixed tracking-tight font-bold" href="#">
+                SAVANNA ORINOQUÍA
+            </a>
+<!-- Navigation Links (Hidden on Mobile) -->
+<nav class="hidden md:flex gap-gutter items-center">
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors hover:opacity-80 transition-opacity scale-95 active:scale-90 transition-transform" href="#">
+                    Inicio
+                </a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors hover:opacity-80 transition-opacity scale-95 active:scale-90 transition-transform" href="#">
+                    Reservas
+                </a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors hover:opacity-80 transition-opacity scale-95 active:scale-90 transition-transform" href="#">
+                    Orinoquía
+                </a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors hover:opacity-80 transition-opacity scale-95 active:scale-90 transition-transform" href="#">
+                    Experiencias
+                </a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-on-surface dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors hover:opacity-80 transition-opacity scale-95 active:scale-90 transition-transform" href="#">
+                    Lodge
+                </a>
+<a class="font-label-md text-label-md uppercase tracking-widest text-primary dark:text-primary-fixed border-b-2 border-primary dark:border-primary-fixed pb-1 hover:opacity-80 transition-opacity scale-95 active:scale-90 transition-transform" href="#">
+                    Sostenibilidad
+                </a>
+</nav>
+<!-- Trailing Actions -->
+<div class="flex items-center gap-4">
+<span class="font-label-md text-label-md uppercase tracking-widest text-on-surface dark:text-surface-variant hidden md:block">ES/EN</span>
+<button class="text-on-surface dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors">
+<span class="material-symbols-outlined">camera</span>
+</button>
+<button class="text-on-surface dark:text-surface-variant hover:text-primary dark:hover:text-primary-fixed transition-colors">
+<span class="material-symbols-outlined">public</span>
+</button>
+</div>
+</div>
+</header>
+<main>
+<!-- HEADER HERO -->
+<section class="relative w-full h-[716px] flex items-center justify-center bg-cover bg-center" data-alt="A breathtaking, expansive landscape of the untamed Orinoquía region at dawn. The scene features vast, flat plains extending to the horizon, dotted with sparse, hardy vegetation and reflecting pools of water from the rainy season. Soft, golden morning light bathes the pristine wilderness, creating a serene and awe-inspiring mood. The image is captured in a highly cinematic, premium documentary style, utilizing deep blacks in the shadows and warm, radiant golds to echo the brand's sophisticated, high-contrast aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD5lvS9I3mJb1hYqQEj_iB5uLw9AGiIbcetId1hGkShzS8NBLqO66nqy_LXIgzxQpJR2SMInjlROckK-31aDJKTsbRPibW9nkv6exLrSfoS1QSlAqoInDGOie8_VBHrNubpf0P_4d-Ekc0oqJTcvRUhiOUCgm2OxfzXfyikAE_8vHZSOuhHq7sEH6VrkCaNmMb9IOtOvTHHPN_HDLZNCXrV2VCm-EDHeWilPDHlz7jTy27_4QjdiKZSs3nhddWVY4ZUsknOJhjrMEJG');">
+<!-- Dark Scrim Overlay -->
+<div class="absolute inset-0 bg-black/40"></div>
+<div class="relative z-10 text-center px-margin-mobile md:px-margin-desktop text-on-primary">
+<h1 class="font-headline-display text-headline-display mb-6">Sostenibilidad</h1>
+<p class="font-body-lg text-body-lg max-w-2xl mx-auto">Un compromiso con los Llanos Orientales y quienes los habitan</p>
+</div>
+</section>
+<!-- PHILOSOPHY SECTION -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-low">
+<div class="max-w-[750px] mx-auto text-center">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-8">Operar con responsabilidad</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                    En Savanna Orinoquía Lodge creemos que el turismo de lujo y la conservación no solo pueden coexistir: deben complementarse. Cada decisión operativa del lodge considera su impacto en el ecosistema de los Llanos Orientales, en la comunidad local y en la fauna que comparte este territorio con nosotros.
+                </p>
+</div>
+</section>
+<!-- PILLARS SECTION -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-inverse-surface text-surface">
+<div class="max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Pillar 1 -->
+<div class="flex flex-col items-start">
+<span class="material-symbols-outlined text-4xl mb-6 text-primary-container" style="font-variation-settings: 'FILL' 1;">eco</span>
+<h3 class="font-headline-md text-headline-md mb-4 text-surface">Conservación de la fauna</h3>
+<p class="font-body-md text-body-md text-surface-variant opacity-80">
+                            Protección activa del hábitat de especies como el caimán del Orinoco, el chigüiro y las más de 300 especies de aves que habitan la región.
+                        </p>
+</div>
+<!-- Pillar 2 -->
+<div class="flex flex-col items-start">
+<span class="material-symbols-outlined text-4xl mb-6 text-primary-container" style="font-variation-settings: 'FILL' 1;">group</span>
+<h3 class="font-headline-md text-headline-md mb-4 text-surface">Comunidad local</h3>
+<p class="font-body-md text-body-md text-surface-variant opacity-80">
+                            Priorizamos el empleo y los proveedores locales del Casanare, fortaleciendo la economía de las comunidades llaneras.
+                        </p>
+</div>
+<!-- Pillar 3 -->
+<div class="flex flex-col items-start">
+<span class="material-symbols-outlined text-4xl mb-6 text-primary-container" style="font-variation-settings: 'FILL' 1;">recycling</span>
+<h3 class="font-headline-md text-headline-md mb-4 text-surface">Operación responsable</h3>
+<p class="font-body-md text-body-md text-surface-variant opacity-80">
+                            Gestión consciente de residuos, uso eficiente del agua y energía, y respeto por los ciclos naturales de la sabana y los ríos.
+                        </p>
+</div>
+</div>
+</div>
+</section>
+<!-- ENVIRONMENT PROTECTION SECTION -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
+<div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-gutter items-center">
+<!-- Image Left -->
+<div class="relative h-[500px] w-full rounded-DEFAULT overflow-hidden">
+<img alt="Flooded savanna landscape" class="absolute inset-0 w-full h-full object-cover" data-alt="A pristine flooded savanna in the Casanare region during the wet season. Lush green vegetation emerges from shallow, reflective waters under a clear sky. A solitary, elegant white heron wades gracefully in the foreground. The lighting is bright and natural, capturing the vibrant greens and clear blues to evoke a sense of pure, undisturbed nature. The image composition reflects high-end environmental photography, aligning perfectly with the brand's minimal yet majestic aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBf-Nw2dCl6SJhV7na171vtZzIduZJ3iKQ8vfxzpT_DDD1r5kYTIw4ZsDixkn1TYRPgv1IkhnjzyYsqq-fkNk0XlZoX0_HDQ-hjvNZiPn2W4awfUNlHfMtfuBp8_FdpCpUykaBVLGurVdlCzYpXnslzwUzKhsfpTjkfpSn3kYmkcqkrCkK6vIpEhlZied9UdFWFRbBnDxNZVfzFc04jf3ulpz0YCIZpC0WYpAPEJybPWwJ9fuwrAjDiHZ_oPEBTG8wrv0Iz7iP52Qwz"/>
+<div class="absolute inset-0 bg-black/10"></div>
+</div>
+<!-- Text Right -->
+<div class="md:pl-12">
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                        Los Llanos Orientales son uno de los ecosistemas más frágiles y a la vez más resilientes de Sudamérica. El Casanare, con sus 16 ecosistemas, alberga una biodiversidad que pocas regiones del mundo pueden igualar. En Savanna, ser testigo de esa naturaleza viva es el producto. Protegerla es nuestra responsabilidad.
+                    </p>
+</div>
+</div>
+</section>
+<!-- IMPACTO EN NÚMEROS -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-inverse-surface">
+  <div class="max-w-container-max mx-auto">
+    <p class="font-label-md text-label-md uppercase tracking-widest text-primary-container mb-12 text-center">Nuestro impacto</p>
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-gutter text-center">
+      <div class="flex flex-col items-center gap-3">
+        <span class="font-headline-display text-[56px] md:text-[80px] leading-none text-primary-fixed font-light">85%</span>
+        <p class="font-body-md text-body-md text-surface-variant">de la energía del lodge proviene de fuentes renovables</p>
+      </div>
+      <div class="flex flex-col items-center gap-3">
+        <span class="font-headline-display text-[56px] md:text-[80px] leading-none text-primary-fixed font-light">120+</span>
+        <p class="font-body-md text-body-md text-surface-variant">empleados de comunidades locales del Casanare</p>
+      </div>
+      <div class="flex flex-col items-center gap-3">
+        <span class="font-headline-display text-[56px] md:text-[80px] leading-none text-primary-fixed font-light">4.200</span>
+        <p class="font-body-md text-body-md text-surface-variant">hectáreas de sabana bajo conservación activa</p>
+      </div>
+      <div class="flex flex-col items-center gap-3">
+        <span class="font-headline-display text-[56px] md:text-[80px] leading-none text-primary-fixed font-light">300+</span>
+        <p class="font-body-md text-body-md text-surface-variant">especies de aves monitoreadas en nuestro territorio</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROGRAMAS EN ACCIÓN -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container-low">
+  <div class="max-w-container-max mx-auto">
+    <div class="mb-16 max-w-[600px]">
+      <p class="font-label-md text-label-md uppercase tracking-widest text-primary mb-4">Programas activos</p>
+      <h2 class="font-headline-lg text-headline-lg text-on-surface">Acciones concretas sobre el territorio</h2>
+    </div>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+      <!-- Programa 1 -->
+      <div class="bg-surface-container-lowest p-8 rounded-lg flex flex-col gap-5 border border-outline-variant">
+        <span class="material-symbols-outlined text-3xl text-secondary" style="font-variation-settings: 'FILL' 1;">biotech</span>
+        <h3 class="font-headline-md text-[24px] leading-tight text-on-surface">Monitoreo de fauna silvestre</h3>
+        <p class="font-body-md text-body-md text-on-surface-variant flex-1">
+          En alianza con el Instituto Humboldt, realizamos censos trimestrales de mamíferos, reptiles y aves para medir la salud del ecosistema y detectar cambios en la biodiversidad a tiempo.
+        </p>
+        <a href="#" class="font-label-md text-label-md uppercase tracking-widest text-primary hover:text-primary-container transition-colors inline-flex items-center gap-2">
+          Conocer más <span class="material-symbols-outlined text-base">arrow_forward</span>
+        </a>
+      </div>
+      <!-- Programa 2 -->
+      <div class="bg-surface-container-lowest p-8 rounded-lg flex flex-col gap-5 border border-outline-variant">
+        <span class="material-symbols-outlined text-3xl text-secondary" style="font-variation-settings: 'FILL' 1;">water</span>
+        <h3 class="font-headline-md text-[24px] leading-tight text-on-surface">Restauración de cuerpos de agua</h3>
+        <p class="font-body-md text-body-md text-on-surface-variant flex-1">
+          Recuperamos esteros y caños afectados por la ganadería extensiva, replantando especies nativas y eliminando plantas invasoras para restablecer los ciclos hídricos naturales de la sabana.
+        </p>
+        <a href="#" class="font-label-md text-label-md uppercase tracking-widest text-primary hover:text-primary-container transition-colors inline-flex items-center gap-2">
+          Conocer más <span class="material-symbols-outlined text-base">arrow_forward</span>
+        </a>
+      </div>
+      <!-- Programa 3 -->
+      <div class="bg-surface-container-lowest p-8 rounded-lg flex flex-col gap-5 border border-outline-variant">
+        <span class="material-symbols-outlined text-3xl text-secondary" style="font-variation-settings: 'FILL' 1;">school</span>
+        <h3 class="font-headline-md text-[24px] leading-tight text-on-surface">Formación llanera</h3>
+        <p class="font-body-md text-body-md text-on-surface-variant flex-1">
+          Capacitamos a guías locales en interpretación ambiental, fotografía de naturaleza y primeros auxilios en campo, generando liderazgo comunitario y empleo digno en la región.
+        </p>
+        <a href="#" class="font-label-md text-label-md uppercase tracking-widest text-primary hover:text-primary-container transition-colors inline-flex items-center gap-2">
+          Conocer más <span class="material-symbols-outlined text-base">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMPROMISOS 2030 -->
+<section class="py-section-gap px-margin-mobile md:px-margin-desktop bg-surface-container">
+  <div class="max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-gutter items-start">
+    <!-- Text Left -->
+    <div>
+      <p class="font-label-md text-label-md uppercase tracking-widest text-primary mb-4">Hoja de ruta</p>
+      <h2 class="font-headline-lg text-headline-lg text-on-surface mb-8">Compromisos hacia 2030</h2>
+      <p class="font-body-lg text-body-lg text-on-surface-variant">
+        Tener impacto positivo no es un estado: es un proceso. Estos son los compromisos medibles que guían cada decisión operativa y de inversión del lodge durante la próxima década.
+      </p>
+    </div>
+    <!-- Commitments Right -->
+    <div class="flex flex-col divide-y divide-outline-variant">
+      <div class="flex items-start gap-6 py-7">
+        <span class="material-symbols-outlined text-xl text-primary mt-1 flex-shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+        <div>
+          <h4 class="font-body-lg text-body-lg font-medium text-on-surface mb-1">100% energía renovable en operaciones</h4>
+          <p class="font-body-md text-body-md text-on-surface-variant">Transición completa a paneles solares y biogás para 2026.</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-6 py-7">
+        <span class="material-symbols-outlined text-xl text-primary mt-1 flex-shrink-0" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+        <div>
+          <h4 class="font-body-lg text-body-lg font-medium text-on-surface mb-1">Cero residuos a relleno sanitario</h4>
+          <p class="font-body-md text-body-md text-on-surface-variant">Compostaje, reciclaje y reducción en origen para 2027.</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-6 py-7">
+        <span class="material-symbols-outlined text-xl text-secondary mt-1 flex-shrink-0" style="font-variation-settings: 'FILL' 0;">radio_button_unchecked</span>
+        <div>
+          <h4 class="font-body-lg text-body-lg font-medium text-on-surface mb-1">10.000 hectáreas bajo esquema de conservación</h4>
+          <p class="font-body-md text-body-md text-on-surface-variant">Expansión del área protegida en alianza con fincas vecinas para 2028.</p>
+        </div>
+      </div>
+      <div class="flex items-start gap-6 py-7">
+        <span class="material-symbols-outlined text-xl text-secondary mt-1 flex-shrink-0" style="font-variation-settings: 'FILL' 0;">radio_button_unchecked</span>
+        <div>
+          <h4 class="font-body-lg text-body-lg font-medium text-on-surface mb-1">Certificación internacional de turismo sostenible</h4>
+          <p class="font-body-md text-body-md text-on-surface-variant">Proceso de certificación Rainforest Alliance en curso, meta 2029.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="relative py-section-gap px-margin-mobile md:px-margin-desktop flex flex-col items-center justify-center text-center bg-cover bg-center" data-alt="A close-up, highly detailed portrait of a native capybara (chigüiro) resting peacefully amidst tall, golden savanna grass. The background is softly blurred in a shallow depth of field, emphasizing the texture of the animal's fur and the surrounding flora. The scene is lit by golden hour sunlight, creating warm, radiant highlights and deep, architectural shadows. The mood is tranquil, deeply connected to the earth, and inherently luxurious in its authenticity, perfectly matching the dark, high-contrast brand overlay aesthetic." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBnG6GrAxE4kxyKS7mfsTvaZ5OyfKixs2OtogCKXN3zgdzQX5hCZyIsN8UNodczfX1ddP7yrsj3kqZLpweztkv76ccAdvylcBSWgilLejVwclFcJdWaqjT-VLWM-Gcy75GZ6NVrPggpUv0I7lkI13RuluaTA0GONdap9V8WbXwzQ2LtRZrCD2otzbDrMxdiUMx6PcuXLYfWu458tHrZmlvTe9jkr7J472pc-I4_Q_Sv8GvXLZJq0vKDeylOTqW791odC83kCt8rnTqi');">
+<!-- Dark Scrim Overlay -->
+<div class="absolute inset-0 bg-black/60"></div>
+<div class="relative z-10">
+<h2 class="font-headline-display text-headline-display text-surface mb-8">Viaja bien. Deja poco. Llévate mucho.</h2>
+<a class="inline-flex items-center justify-center px-8 py-4 bg-primary-container text-on-primary-fixed font-label-md text-label-md uppercase tracking-widest rounded hover:bg-primary-fixed transition-colors" href="#">
+                    Conoce el lodge <span class="material-symbols-outlined ml-2 text-sm">arrow_forward</span>
+</a>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="w-full py-section-gap px-margin-mobile md:px-margin-desktop bg-inverse-surface dark:bg-black">
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter max-w-container-max mx-auto">
+<!-- Column 1: Brand/Logo -->
+<div class="flex flex-col items-start opacity-90 hover:opacity-100 transition-opacity">
+<span class="font-headline-lg text-headline-lg text-primary-fixed mb-4">SAVANNA ORINOQUÍA</span>
+<p class="font-body-md text-body-md text-surface-variant">
+                    © 2024 Savanna Orinoquía Lodge. All rights reserved.
+                </p>
+</div>
+<!-- Column 2: Navigation Links -->
+<div class="flex flex-col gap-4 opacity-90 hover:opacity-100 transition-opacity">
+<a class="font-body-md text-body-md text-surface-variant hover:text-primary-fixed hover:text-primary-fixed transition-colors" href="#">
+                    Biodiversidad
+                </a>
+<a class="font-body-md text-body-md text-surface-variant hover:text-primary-fixed hover:text-primary-fixed transition-colors" href="#">
+                    Cómo llegar
+                </a>
+<a class="font-body-md text-body-md text-primary-fixed underline hover:text-primary-fixed transition-colors" href="#">
+                    Sostenibilidad
+                </a>
+<a class="font-body-md text-body-md text-surface-variant hover:text-primary-fixed hover:text-primary-fixed transition-colors" href="#">
+                    Términos y Condiciones
+                </a>
+</div>
+<!-- Column 3: Contact Placeholder (from Style Guidance) -->
+<div class="flex flex-col items-start gap-4 opacity-90 hover:opacity-100 transition-opacity">
+<p class="font-body-md text-body-md text-surface-variant">
+                    Contacto: info@savannaorinoquialodge.co
+                </p>
+<div class="flex gap-4">
+<a class="text-surface-variant hover:text-primary-fixed transition-colors" href="#"><span class="material-symbols-outlined">mail</span></a>
+<a class="text-surface-variant hover:text-primary-fixed transition-colors" href="#"><span class="material-symbols-outlined">phone</span></a>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
